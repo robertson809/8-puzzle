@@ -272,8 +272,8 @@ Gallian, J. 1986.Contemporary Abstract Algebra. Pearson
 Education.
 Johnson, W. W., and Story, W. E. 1879. Notes on the ”15”
 Puzzle.American Journal of Mathematics2(4):397–404.
-Ramanujan, R. 2019. A* with consistency.Davidson College Moodle2(4):397–404.
-Russell, S. J., and Norvig, P. 2003.Artificial Intelligence: A
+Ramanujan, R. 2019. A* with consistency.Davidson College Moodle 2(4):397–404.
+Russell, S. J., and Norvig, P. 2003. Artificial Intelligence: A
 Modern Approach. Pearson Education.
 
 
