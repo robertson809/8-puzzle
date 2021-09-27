@@ -180,7 +180,7 @@ scores are more likely to be closer to the goal state.
 Our results were largely in line with those of Russell and
 Norvig. The number of nodes we generated to solve the
 problem had a 99.9% correlation with Russell and Norvig’s
-forh 1 , and a 98.8% correlation forh 2. As we can see
+forh 1 , and a 98.8% correlation for h<sub>2</sub>. As we can see
 from Figure 2, we found that theh 2 algorithm consistently
 outperformed theh 3 algorithm, which in turn consistently
 outperformed theh 1 algorithm. This difference became increasingly significant as our problem complexity increased
