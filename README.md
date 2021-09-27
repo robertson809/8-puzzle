@@ -109,7 +109,7 @@ never ”back-tracked,” or reentered a state that it had already
 been in.
 Because Russell and Norvig’s paper does not describe the
 process by which they generated random problems of specific depths, we produced our data in a somewhat roundabout way in order to emulate theirs. To solve one hundred
-problems of depthd, we repeatedly made about 1. 3 d random moves as described above to produce a pseudo-random
+problems of depthd, we repeatedly made about 1.3d random moves as described above to produce a pseudo-random
 solvable board, and then solved it using A*, continuing until
 we generated one-hundred boards of solution depthd.
 We will now analyze A*’s efficiency over different heuristics, and compare our results to Russell and Norvig’s.
