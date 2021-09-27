@@ -181,7 +181,7 @@ Our results were largely in line with those of Russell and
 Norvig. The number of nodes we generated to solve the
 problem had a 99.9% correlation with Russell and Norvig’s
 forh 1 , and a 98.8% correlation for h<sub>2</sub>. As we can see
-from Figure 2, we found that theh 2 algorithm consistently
+from Figure 2, we found that the h<sub>2</sub> algorithm consistently
 outperformed theh 3 algorithm, which in turn consistently
 outperformed theh 1 algorithm. This difference became increasingly significant as our problem complexity increased
 in size. From this, we can clearly see how heuristic choice
@@ -190,7 +190,7 @@ can affect the performance of A*.
 
 <p align="center">
     
-  <img src="https://raw.githubusercontent.com/robertson809/8-puzzle/main/fig/search_cost.jpg" alt="drawing" width="400"/>
+  <img src="https://raw.githubusercontent.com/robertson809/8-puzzle/main/fig/search_cost.jpg" alt="drawing" width="600"/>
 </p>
 
 <p align="center">
@@ -209,7 +209,7 @@ Russell and Norvig, though they differ slightly as the problem size gets more co
 
 <p align="center">
     
-  <img src="https://raw.githubusercontent.com/robertson809/8-puzzle/main/fig/node_count.jpg" alt="drawing" width="400"/>
+  <img src="https://raw.githubusercontent.com/robertson809/8-puzzle/main/fig/node_count.jpg" alt="drawing" width="600"/>
 </p>
 
 
@@ -220,9 +220,9 @@ distinct nodes or all nodes generated, as compared with the
 results of Russell and Norvig.
  </p>
 
-As we see, h<sub>2</sub> dominatesh 3 which dominates h<sub>1</sub> : there
-is no depth of solution for which h<sub>1</sub> outperforms h<sub>3</sub> and no depth of solution for whichh 3 outperformsh 2. In addition,
-we must note that our EBF is always slightly different from
+As we see, h<sub>2</sub> dominates h<sub>3</sub> which dominates h<sub>1</sub> : there
+is no depth of solution for which h<sub>1</sub> outperforms h<sub>3</sub> and no depth of solution for which h<sub>3</sub> outperforms h<sub>2</sub>. In addition,
+we must note that our effective branching factor is always slightly different from
 that of Russell and Norvig. Without access to their code, determining the root of this discrepancy is difficult. It might be
 how we generated random states - we used "random walks"
 to randomize the board state for simpler problems with a solution at a lower depth -- moving the blank square in one of
@@ -234,8 +234,7 @@ and Norvig. In addition, their terminology "nodes generated" is ambiguous in the
 generated - Russell and Norvig might have counted
 their nodes in a different fashion - for instance, when they
 pushed a node to the heap after checking it against past
-states. Lastly, they might have weighted their path differently than we did - we used a path weight of one as the cost for any given move, but it is conceivable that Russell
-and Norvig weighted their path cost more heavily, changing
+states. Lastly, they might have weighted their path differently than we did - we used a path weight of one as the cost for any given move, but it is conceivable that Russell and Norvig weighted their path cost more heavily, changing
 their g(n) function.
 
 
@@ -243,6 +242,10 @@ their g(n) function.
     
   <img src="https://raw.githubusercontent.com/robertson809/8-puzzle/main/fig/table_ours_RN.png" alt="drawing" width="400"/>
 </p>
+
+<p align="center">
+    Our Effective Branching Factors (EBF) compared to Russell and Norvig's.
+   </p>
 
 
 ## Conclusions
