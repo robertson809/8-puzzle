@@ -189,7 +189,6 @@ class Puzzle:
         count = 0
         row_b = 0
         col_b = 0
-        # print 'here'
         while (True):
             if board == self.my_goal:
                 # print self.squares
@@ -270,13 +269,13 @@ class Puzzle:
         return (False, [[]], -1)
 
 
-# testing
-# constants
-target_depth = 18
-num_moves_init = 26
-num_heuristic = 1
+# testing constants
+target_depth = 20
+num_moves_init = 40
+num_heuristic = 2
 size_puzzle = 3
-puzzles_to_solve = 100
+puzzles_to_solve = 10
+
 # initialize the dictionary of results
 results = {}
 results[target_depth] = (0, 0)
@@ -284,16 +283,20 @@ results[target_depth] = (0, 0)
 while (True):
     puzzle = Puzzle(size_puzzle, num_moves_init)
     result = puzzle.search(num_heuristic)
+    # depth of the solution, the number of moves it took to solve it
     depth = result[1]
     if depth != target_depth:
         continue
     node = result[2]
     times_solved = results[depth][0]
-    print (times_solved)
+    print 'We\'ve solved a puzzle with solution depth', target_depth, times_solved, 'times'
     if times_solved < puzzles_to_solve:
         total_node_count = results[depth][1]
         entry = {depth: (times_solved + 1, total_node_count + node)}
         results.update(entry)
+        # print(results)
         continue
     break
+print 'Results (form): {puzzle of depth x: (times solved, \
+total puzzle states used)}'
 print results
