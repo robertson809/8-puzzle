@@ -10,7 +10,6 @@ By Michael Robertson and Aidan O'Neill for Davidson College's Machine Reasoning 
 - [Results](#results)
 - [Conclusions](#conclusions)
 - [Contributions](#contributions)
-- [Acknowledgements](#acknowledgements)
 - [References](#references)
 
 
